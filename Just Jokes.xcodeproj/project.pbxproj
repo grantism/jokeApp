@@ -20,6 +20,9 @@
 		E37FE6C5295D0EC100E55B92 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E37FE6C4295D0EC100E55B92 /* Moya */; };
 		E37FE6C7295D0EC100E55B92 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E37FE6C6295D0EC100E55B92 /* ReactiveMoya */; };
 		E37FE6C9295D0EC100E55B92 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E37FE6C8295D0EC100E55B92 /* RxMoya */; };
+		E37FE6CC295D0F8500E55B92 /* JokesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6CB295D0F8500E55B92 /* JokesApi.swift */; };
+		E37FE6CF295D254000E55B92 /* JokesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6CE295D254000E55B92 /* JokesResponse.swift */; };
+		E37FE6D2295D3B1500E55B92 /* JokesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6D1295D3B1500E55B92 /* JokesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		E37FE6A1295D07DC00E55B92 /* Just JokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Just JokesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37FE6A5295D07DC00E55B92 /* JustJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustJokesUITests.swift; sourceTree = "<group>"; };
 		E37FE6A7295D07DC00E55B92 /* JustJokesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustJokesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E37FE6CB295D0F8500E55B92 /* JokesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesApi.swift; sourceTree = "<group>"; };
+		E37FE6CE295D254000E55B92 /* JokesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesResponse.swift; sourceTree = "<group>"; };
+		E37FE6D1295D3B1500E55B92 /* JokesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,8 @@
 		E37FE683295D07D900E55B92 /* Just Jokes */ = {
 			isa = PBXGroup;
 			children = (
+				E37FE6D0295D3AFE00E55B92 /* Services */,
+				E37FE6CA295D0F5200E55B92 /* Networking */,
 				E37FE684295D07D900E55B92 /* AppDelegate.swift */,
 				E37FE686295D07D900E55B92 /* SceneDelegate.swift */,
 				E37FE688295D07D900E55B92 /* ViewController.swift */,
@@ -133,6 +141,23 @@
 				E37FE6A7295D07DC00E55B92 /* JustJokesUITestsLaunchTests.swift */,
 			);
 			path = "Just JokesUITests";
+			sourceTree = "<group>";
+		};
+		E37FE6CA295D0F5200E55B92 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E37FE6CB295D0F8500E55B92 /* JokesApi.swift */,
+				E37FE6CE295D254000E55B92 /* JokesResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E37FE6D0295D3AFE00E55B92 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E37FE6D1295D3B1500E55B92 /* JokesService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +324,10 @@
 			files = (
 				E37FE689295D07D900E55B92 /* ViewController.swift in Sources */,
 				E37FE685295D07D900E55B92 /* AppDelegate.swift in Sources */,
+				E37FE6D2295D3B1500E55B92 /* JokesService.swift in Sources */,
+				E37FE6CF295D254000E55B92 /* JokesResponse.swift in Sources */,
 				E37FE687295D07D900E55B92 /* SceneDelegate.swift in Sources */,
+				E37FE6CC295D0F8500E55B92 /* JokesApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
