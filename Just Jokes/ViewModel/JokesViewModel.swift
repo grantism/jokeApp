@@ -3,16 +3,10 @@
 //
 //  Created by Grant McNally on 2/1/2023.
 //
-//
 import Foundation
 
-protocol JokesViewModelType {
-    func fetchData(completion: @escaping (Joke?) -> Void)
-    func configure (_ view: JokesView)
-}
-
-class JokesViewModel: JokesViewModelType {
-    var jokes: Joke?
+class JokesViewModel {
+    var jokes =  [Joke]()
     let jokesService: JokesService
 
     // TODO: improve DI
@@ -26,14 +20,16 @@ class JokesViewModel: JokesViewModelType {
 
     func fetchData(completion: @escaping (Joke?) -> Void) {
         jokesService.jokeOfTheDay { joke in
-            self.jokes = joke
+            if joke != nil {
+                self.jokes.append(joke!)
+            }
             // TODO: can probably remove joke from completion handler.
-            completion(self.jokes)
+            completion(joke)
         }
     }
 
     func configure (_ view: JokesView) {
-        // if no joke, show loading?
-        view.jokeLabel.text = jokes?.text ?? "none yet"
+        // TODO: if no jokes, show loading?
+        view.addPages()
     }
 }
