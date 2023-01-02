@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E37FE685295D07D900E55B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE684295D07D900E55B92 /* AppDelegate.swift */; };
 		E37FE687295D07D900E55B92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE686295D07D900E55B92 /* SceneDelegate.swift */; };
-		E37FE689295D07D900E55B92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE688295D07D900E55B92 /* ViewController.swift */; };
+		E37FE689295D07D900E55B92 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE688295D07D900E55B92 /* JokesViewController.swift */; };
 		E37FE68C295D07D900E55B92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37FE68A295D07D900E55B92 /* Main.storyboard */; };
 		E37FE68E295D07DB00E55B92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37FE68D295D07DB00E55B92 /* Assets.xcassets */; };
 		E37FE691295D07DB00E55B92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37FE68F295D07DB00E55B92 /* LaunchScreen.storyboard */; };
@@ -23,6 +23,8 @@
 		E37FE6CC295D0F8500E55B92 /* JokesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6CB295D0F8500E55B92 /* JokesApi.swift */; };
 		E37FE6CF295D254000E55B92 /* JokesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6CE295D254000E55B92 /* JokesResponse.swift */; };
 		E37FE6D2295D3B1500E55B92 /* JokesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6D1295D3B1500E55B92 /* JokesService.swift */; };
+		E37FE6D429625E3000E55B92 /* JokesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6D329625E3000E55B92 /* JokesView.swift */; };
+		E37FE6D629625FE900E55B92 /* JokesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6D529625FE900E55B92 /* JokesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,7 @@
 		E37FE681295D07D900E55B92 /* Just Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Jokes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37FE684295D07D900E55B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E37FE686295D07D900E55B92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E37FE688295D07D900E55B92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E37FE688295D07D900E55B92 /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 		E37FE68B295D07D900E55B92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E37FE68D295D07DB00E55B92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E37FE690295D07DB00E55B92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,8 @@
 		E37FE6CB295D0F8500E55B92 /* JokesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesApi.swift; sourceTree = "<group>"; };
 		E37FE6CE295D254000E55B92 /* JokesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesResponse.swift; sourceTree = "<group>"; };
 		E37FE6D1295D3B1500E55B92 /* JokesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesService.swift; sourceTree = "<group>"; };
+		E37FE6D329625E3000E55B92 /* JokesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesView.swift; sourceTree = "<group>"; };
+		E37FE6D529625FE900E55B92 /* JokesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +117,13 @@
 		E37FE683295D07D900E55B92 /* Just Jokes */ = {
 			isa = PBXGroup;
 			children = (
-				E37FE6D0295D3AFE00E55B92 /* Services */,
-				E37FE6CA295D0F5200E55B92 /* Networking */,
 				E37FE684295D07D900E55B92 /* AppDelegate.swift */,
+				E37FE6CA295D0F5200E55B92 /* Networking */,
 				E37FE686295D07D900E55B92 /* SceneDelegate.swift */,
-				E37FE688295D07D900E55B92 /* ViewController.swift */,
+				E37FE6D0295D3AFE00E55B92 /* Services */,
+				E37FE6D829627A6E00E55B92 /* View */,
+				E37FE6D729627A5A00E55B92 /* ViewController */,
+				E37FE6D929627A7600E55B92 /* ViewModel */,
 				E37FE68A295D07D900E55B92 /* Main.storyboard */,
 				E37FE68D295D07DB00E55B92 /* Assets.xcassets */,
 				E37FE68F295D07DB00E55B92 /* LaunchScreen.storyboard */,
@@ -158,6 +164,30 @@
 				E37FE6D1295D3B1500E55B92 /* JokesService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E37FE6D729627A5A00E55B92 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E37FE688295D07D900E55B92 /* JokesViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E37FE6D829627A6E00E55B92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E37FE6D329625E3000E55B92 /* JokesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E37FE6D929627A7600E55B92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E37FE6D529625FE900E55B92 /* JokesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,11 +352,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E37FE689295D07D900E55B92 /* ViewController.swift in Sources */,
+				E37FE689295D07D900E55B92 /* JokesViewController.swift in Sources */,
 				E37FE685295D07D900E55B92 /* AppDelegate.swift in Sources */,
 				E37FE6D2295D3B1500E55B92 /* JokesService.swift in Sources */,
 				E37FE6CF295D254000E55B92 /* JokesResponse.swift in Sources */,
 				E37FE687295D07D900E55B92 /* SceneDelegate.swift in Sources */,
+				E37FE6D429625E3000E55B92 /* JokesView.swift in Sources */,
+				E37FE6D629625FE900E55B92 /* JokesViewModel.swift in Sources */,
 				E37FE6CC295D0F8500E55B92 /* JokesApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,8 +539,10 @@
 				DEVELOPMENT_TEAM = 5TA5RYL4L7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Just Jokes/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = JustJokes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -535,8 +569,10 @@
 				DEVELOPMENT_TEAM = 5TA5RYL4L7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Just Jokes/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = JustJokes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

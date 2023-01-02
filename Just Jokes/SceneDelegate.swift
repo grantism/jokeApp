@@ -11,11 +11,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-        guard let _ = (scene as? UIWindowScene) else { return }
     func scene(
         _ scene: UIScene,
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions) {
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+
+        // TODO: improve DI
+        let jokeService = JokesService()
+            
+        window?.windowScene = windowScene
+        window?.makeKeyAndVisible()
+            window?.rootViewController = JokesViewController(viewModel: JokesViewModel(service: jokeService))
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
