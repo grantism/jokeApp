@@ -1,5 +1,5 @@
 //
-//  ViewModel for updating the data shown in the view
+//  ViewModel
 //
 //  Created by Grant McNally on 2/1/2023.
 //
@@ -9,7 +9,7 @@ class JokesViewModel {
     var jokes =  [Joke]()
     let jokesService: JokesService
 
-    // TODO: improve DI
+    // TODO: improve how DI is handled
     convenience init() {
         self.init(service: JokesService())
     }
@@ -18,18 +18,18 @@ class JokesViewModel {
         jokesService = service
     }
 
-    func fetchData(completion: @escaping (Joke?) -> Void) {
+    func fetchData(completion: @escaping () -> Void) {
+        // TODO: replace this with the "random joke" endpoint. (I didn't want to spend $10 for the API).
         jokesService.jokeOfTheDay { joke in
             if joke != nil {
                 self.jokes.append(joke!)
             }
-            // TODO: can probably remove joke from completion handler.
-            completion(joke)
+            completion()
         }
     }
 
     func configure (_ view: JokesView) {
-        // TODO: if no jokes, show loading?
+        // TODO: add some nice loading & error states
         view.addPages()
     }
 }

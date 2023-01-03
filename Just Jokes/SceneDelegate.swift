@@ -19,13 +19,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // TODO: improve DI
         let jokeService = JokesService()
-            
+
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
-            window?.rootViewController = JokesViewController(viewModel: JokesViewModel(service: jokeService))
+        window?.rootViewController = JokesViewController(viewModel: JokesViewModel(service: jokeService))
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
+
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {

@@ -6,10 +6,12 @@
 
 import UIKit
 
+// TODO: This can be broken down further to separate classes for each component
+// TODO: No magic numbers (where possible)
 class JokesView: UIView {
-    let scrollView = UIScrollView()
-    let viewModel: JokesViewModel
-    let scrollFrame: CGRect
+    private let scrollView = UIScrollView()
+    private let scrollFrame: CGRect
+    private let viewModel: JokesViewModel
 
     init(frame: CGRect, viewModel: JokesViewModel) {
         self.viewModel = viewModel
@@ -27,14 +29,20 @@ class JokesView: UIView {
         self.addSubview(scrollView)
 
         let more = UIButton()
-        more.frame =  CGRect(x: 0, y: frame.height - 50, width: 200, height: 10)
+        more.frame = CGRect(x: (frame.width / 2) - 100, y: frame.height - 80, width: 200, height: 40)
         more.backgroundColor = .gray
         more.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        more.setTitle("More", for: .normal)
-        more.addAction(UIAction { _ in
-            self.viewModel.jokes.append(self.viewModel.jokes.first!)
-            self.viewModel.configure(self)
-        }, for: .touchUpInside)
+        more.setTitle("Another joke...", for: .normal)
+        more.addAction(
+            UIAction { _ in
+                self.viewModel.fetchData {
+                    DispatchQueue.main.async {
+                        self.viewModel.configure(self)
+                    }
+                }
+            },
+            for: .touchUpInside
+        )
 
         self.addSubview(more)
 

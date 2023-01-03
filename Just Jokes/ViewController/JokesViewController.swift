@@ -10,7 +10,7 @@ class JokesViewController: UIViewController {
     var jokesViewModel: JokesViewModel
     var jokesView: JokesView?
 
-    // Mock for testing
+    // Mock VM for testing
     init(viewModel: JokesViewModel) {
         jokesViewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -27,7 +27,7 @@ class JokesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        jokesViewModel.fetchData { _ in
+        jokesViewModel.fetchData {
             DispatchQueue.main.async {
                 self.updateUI()
             }
