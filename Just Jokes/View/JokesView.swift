@@ -50,6 +50,13 @@ class JokesView: UIView {
             scrollView.addSubview(page)
         }
 
+        // Scroll to the last joke
+        scrollView.setContentOffset(
+            CGPoint(x: scrollFrame.width * CGFloat(viewModel.jokes.count - 1), y: 0),
+            animated: true
+        )
+    }
+
     func addMoreButton() {
         let button = UIButton()
         // TODO: No magic numbers (where possible)
