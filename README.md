@@ -9,9 +9,10 @@ All jokes are displayed as pages in a scrollView.
 
 ## What could be improved?
 Everything...
-To start with, I would spend more time (and $10) to improve the UI to automatically load the next joke when the user reached the last page. I'd also make the cards look a bit nicer.
+To start with, I would spend more time (and $10) to improve the UI to automatically load the next joke when the user reached the last page. I'd also make the cards look a bit nicer as well as implement proper loading & error states. I'd also like to improve the UI to use proper constraints to ensure it works across more devices and orientations.
 
 Next, I would increase test coverage everywhere. I implemented a couple of simeple tests, but if I had more time the service, view, view model, model would be covered.
 
 Additionally, I would improve how dpeendancy injection is handled to make test mocking & substitution easier as well as follow through on the TODO comments in the code.
+
 
