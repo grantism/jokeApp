@@ -25,6 +25,7 @@ class JokesViewModel {
                 self.jokes.append(joke!)
             }
             completion()
+            return
         }
     }
 

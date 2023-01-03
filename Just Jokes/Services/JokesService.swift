@@ -33,6 +33,7 @@ class JokesService {
                     // Callbacks are quick & swifty.
                     // There are other approaches like observable, Reactive, change notifier, etc.
                     completion(joke)
+                    return
                 } catch {
                     // TODO: implement proper error reporting
                     print(error)
@@ -41,8 +42,8 @@ class JokesService {
                 // TODO: implement proper error reporting
                 print(error)
             }
+            completion(nil)
         }
-        completion(nil)
     }
 
 }
