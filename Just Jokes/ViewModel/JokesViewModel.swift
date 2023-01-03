@@ -6,7 +6,7 @@
 import Foundation
 
 class JokesViewModel {
-    var jokes =  [Joke]()
+    var jokes = [Joke]()
     let jokesService: JokesService
 
     // TODO: improve how DI is handled

@@ -14,7 +14,9 @@ private struct JokesApiDetails {
 }
 
 enum JokesApi {
-    static let provider = MoyaProvider<JokesApi>(
+    // This is just var to allow mocking of moya.
+    static var provider = MoyaProvider<JokesApi>(
+        stubClosure: MoyaProvider.immediatelyStub,
             plugins: [
                 NetworkLoggerPlugin(
                     configuration: .init(logOptions: .verbose)
@@ -84,8 +86,7 @@ extension JokesApi: TargetType {
                 \"racial\":\"0\",
                 \"date\":\"2022-12-29\",
                 \"id\":\"S_PLaypT0Xjxr34Q5qsdKweF\",
-                \"text\":\"Q: Whatever happened to the cow that was lifted into the air by the tornado?
-                \r\nA: Udder disaster!\"
+                \"text\":\"Q: Whatever happened to the cow that was lifted into the air by the tornado?\\r\\nA: Udder disaster!\"
              }
           }
        ],

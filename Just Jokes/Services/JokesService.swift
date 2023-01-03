@@ -11,9 +11,20 @@ import Foundation
 import Moya
 
 class JokesService {
+    private let provider: MoyaProvider<JokesApi>
+
+    // Mockable for testing
+    init(provider: MoyaProvider<JokesApi>) {
+        self.provider = provider
+    }
+
+    convenience init() {
+        self.init(provider: JokesApi.provider)
+    }
+
     // Completion handler is escaping due to async API call
     func jokeOfTheDay(completion: @escaping (Joke?) -> Void) {
-        JokesApi.provider.request(.jokeOfTheDay) { result in
+        provider.request(.jokeOfTheDay) { result in
             switch result {
             case .success(let response):
                 do {
