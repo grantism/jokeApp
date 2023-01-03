@@ -16,7 +16,6 @@ private struct JokesApiDetails {
 enum JokesApi {
     // This is just var to allow mocking of moya.
     static var provider = MoyaProvider<JokesApi>(
-        stubClosure: MoyaProvider.immediatelyStub,
             plugins: [
                 NetworkLoggerPlugin(
                     configuration: .init(logOptions: .verbose)
