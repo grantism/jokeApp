@@ -25,6 +25,8 @@
 		E37FE6D2295D3B1500E55B92 /* JokesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6D1295D3B1500E55B92 /* JokesService.swift */; };
 		E37FE6D429625E3000E55B92 /* JokesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6D329625E3000E55B92 /* JokesView.swift */; };
 		E37FE6D629625FE900E55B92 /* JokesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6D529625FE900E55B92 /* JokesViewModel.swift */; };
+		E37FE6DB2963BC5600E55B92 /* JokeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6DA2963BC5600E55B92 /* JokeLabel.swift */; };
+		E37FE6DD2963C48F00E55B92 /* JokePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6DC2963C48F00E55B92 /* JokePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		E37FE6D1295D3B1500E55B92 /* JokesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesService.swift; sourceTree = "<group>"; };
 		E37FE6D329625E3000E55B92 /* JokesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesView.swift; sourceTree = "<group>"; };
 		E37FE6D529625FE900E55B92 /* JokesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewModel.swift; sourceTree = "<group>"; };
+		E37FE6DA2963BC5600E55B92 /* JokeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeLabel.swift; sourceTree = "<group>"; };
+		E37FE6DC2963C48F00E55B92 /* JokePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,8 @@
 		E37FE6D829627A6E00E55B92 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E37FE6DA2963BC5600E55B92 /* JokeLabel.swift */,
+				E37FE6DC2963C48F00E55B92 /* JokePage.swift */,
 				E37FE6D329625E3000E55B92 /* JokesView.swift */,
 			);
 			path = View;
@@ -354,10 +360,12 @@
 			files = (
 				E37FE689295D07D900E55B92 /* JokesViewController.swift in Sources */,
 				E37FE685295D07D900E55B92 /* AppDelegate.swift in Sources */,
+				E37FE6DB2963BC5600E55B92 /* JokeLabel.swift in Sources */,
 				E37FE6D2295D3B1500E55B92 /* JokesService.swift in Sources */,
 				E37FE6CF295D254000E55B92 /* JokesResponse.swift in Sources */,
 				E37FE687295D07D900E55B92 /* SceneDelegate.swift in Sources */,
 				E37FE6D429625E3000E55B92 /* JokesView.swift in Sources */,
+				E37FE6DD2963C48F00E55B92 /* JokePage.swift in Sources */,
 				E37FE6D629625FE900E55B92 /* JokesViewModel.swift in Sources */,
 				E37FE6CC295D0F8500E55B92 /* JokesApi.swift in Sources */,
 			);
@@ -544,8 +552,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,8 +581,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
