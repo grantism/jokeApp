@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E31CD02E2963E35A00D63337 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = E31CD02D2963E35A00D63337 /* Quick */; };
-		E31CD0312963E40000D63337 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E31CD0302963E40000D63337 /* Nimble */; };
 		E3749D6029664AF7002EF899 /* JokesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3749D5F29664AF7002EF899 /* JokesViewModelTests.swift */; };
 		E3749D642966501E002EF899 /* JokesServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3749D632966501E002EF899 /* JokesServiceMock.swift */; };
+		E3749D6E29665AB1002EF899 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = E3749D6D29665AB1002EF899 /* Quick */; };
+		E3749D7429665AE0002EF899 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E3749D7329665AE0002EF899 /* Nimble */; };
+		E3749D7729665C83002EF899 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = E3749D7629665C83002EF899 /* Quick */; };
+		E3749D7929665C83002EF899 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E3749D7829665C83002EF899 /* Nimble */; };
 		E37FE685295D07D900E55B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE684295D07D900E55B92 /* AppDelegate.swift */; };
 		E37FE687295D07D900E55B92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE686295D07D900E55B92 /* SceneDelegate.swift */; };
 		E37FE689295D07D900E55B92 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE688295D07D900E55B92 /* JokesViewController.swift */; };
@@ -18,8 +20,7 @@
 		E37FE68E295D07DB00E55B92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37FE68D295D07DB00E55B92 /* Assets.xcassets */; };
 		E37FE691295D07DB00E55B92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37FE68F295D07DB00E55B92 /* LaunchScreen.storyboard */; };
 		E37FE69C295D07DB00E55B92 /* JokesResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE69B295D07DB00E55B92 /* JokesResponseTests.swift */; };
-		E37FE6A6295D07DC00E55B92 /* JustJokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6A5295D07DC00E55B92 /* JustJokesUITests.swift */; };
-		E37FE6A8295D07DC00E55B92 /* JustJokesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6A7295D07DC00E55B92 /* JustJokesUITestsLaunchTests.swift */; };
+		E37FE6A6295D07DC00E55B92 /* JokesViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE6A5295D07DC00E55B92 /* JokesViewTests.swift */; };
 		E37FE6C3295D0EC100E55B92 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E37FE6C2295D0EC100E55B92 /* CombineMoya */; };
 		E37FE6C5295D0EC100E55B92 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E37FE6C4295D0EC100E55B92 /* Moya */; };
 		E37FE6C7295D0EC100E55B92 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E37FE6C6295D0EC100E55B92 /* ReactiveMoya */; };
@@ -65,8 +66,7 @@
 		E37FE697295D07DB00E55B92 /* Just JokesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Just JokesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37FE69B295D07DB00E55B92 /* JokesResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesResponseTests.swift; sourceTree = "<group>"; };
 		E37FE6A1295D07DC00E55B92 /* Just JokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Just JokesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E37FE6A5295D07DC00E55B92 /* JustJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustJokesUITests.swift; sourceTree = "<group>"; };
-		E37FE6A7295D07DC00E55B92 /* JustJokesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustJokesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E37FE6A5295D07DC00E55B92 /* JokesViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewTests.swift; sourceTree = "<group>"; };
 		E37FE6CB295D0F8500E55B92 /* JokesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesApi.swift; sourceTree = "<group>"; };
 		E37FE6CE295D254000E55B92 /* JokesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesResponse.swift; sourceTree = "<group>"; };
 		E37FE6D1295D3B1500E55B92 /* JokesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesService.swift; sourceTree = "<group>"; };
@@ -93,8 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E31CD02E2963E35A00D63337 /* Quick in Frameworks */,
-				E31CD0312963E40000D63337 /* Nimble in Frameworks */,
+				E3749D6E29665AB1002EF899 /* Quick in Frameworks */,
+				E3749D7429665AE0002EF899 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3749D7729665C83002EF899 /* Quick in Frameworks */,
+				E3749D7929665C83002EF899 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +126,21 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E3749D67296658E5002EF899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3749D7529665C5E002EF899 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E37FE6A5295D07DC00E55B92 /* JokesViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E37FE678295D07D900E55B92 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +148,7 @@
 				E37FE69A295D07DB00E55B92 /* Just JokesTests */,
 				E37FE6A4295D07DC00E55B92 /* Just JokesUITests */,
 				E37FE682295D07D900E55B92 /* Products */,
+				E3749D67296658E5002EF899 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,8 +193,7 @@
 		E37FE6A4295D07DC00E55B92 /* Just JokesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E37FE6A5295D07DC00E55B92 /* JustJokesUITests.swift */,
-				E37FE6A7295D07DC00E55B92 /* JustJokesUITestsLaunchTests.swift */,
+				E3749D7529665C5E002EF899 /* View */,
 			);
 			path = "Just JokesUITests";
 			sourceTree = "<group>";
@@ -275,8 +292,8 @@
 			);
 			name = "Just JokesTests";
 			packageProductDependencies = (
-				E31CD02D2963E35A00D63337 /* Quick */,
-				E31CD0302963E40000D63337 /* Nimble */,
+				E3749D6D29665AB1002EF899 /* Quick */,
+				E3749D7329665AE0002EF899 /* Nimble */,
 			);
 			productName = "Just JokesTests";
 			productReference = E37FE697295D07DB00E55B92 /* Just JokesTests.xctest */;
@@ -296,6 +313,10 @@
 				E37FE6A3295D07DC00E55B92 /* PBXTargetDependency */,
 			);
 			name = "Just JokesUITests";
+			packageProductDependencies = (
+				E3749D7629665C83002EF899 /* Quick */,
+				E3749D7829665C83002EF899 /* Nimble */,
+			);
 			productName = "Just JokesUITests";
 			productReference = E37FE6A1295D07DC00E55B92 /* Just JokesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -334,8 +355,8 @@
 			mainGroup = E37FE678295D07D900E55B92;
 			packageReferences = (
 				E37FE6C1295D0EC100E55B92 /* XCRemoteSwiftPackageReference "Moya" */,
-				E31CD02C2963E35A00D63337 /* XCRemoteSwiftPackageReference "Quick" */,
-				E31CD02F2963E40000D63337 /* XCRemoteSwiftPackageReference "Nimble" */,
+				E3749D6C29665AB1002EF899 /* XCRemoteSwiftPackageReference "Quick" */,
+				E3749D7229665AE0002EF899 /* XCRemoteSwiftPackageReference "Nimble" */,
 			);
 			productRefGroup = E37FE682295D07D900E55B92 /* Products */;
 			projectDirPath = "";
@@ -429,8 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E37FE6A6295D07DC00E55B92 /* JustJokesUITests.swift in Sources */,
-				E37FE6A8295D07DC00E55B92 /* JustJokesUITestsLaunchTests.swift in Sources */,
+				E37FE6A6295D07DC00E55B92 /* JokesViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,7 +780,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E31CD02C2963E35A00D63337 /* XCRemoteSwiftPackageReference "Quick" */ = {
+		E3749D6C29665AB1002EF899 /* XCRemoteSwiftPackageReference "Quick" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Quick/Quick";
 			requirement = {
@@ -768,7 +788,7 @@
 				kind = branch;
 			};
 		};
-		E31CD02F2963E40000D63337 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+		E3749D7229665AE0002EF899 /* XCRemoteSwiftPackageReference "Nimble" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Quick/Nimble";
 			requirement = {
@@ -787,14 +807,24 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E31CD02D2963E35A00D63337 /* Quick */ = {
+		E3749D6D29665AB1002EF899 /* Quick */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E31CD02C2963E35A00D63337 /* XCRemoteSwiftPackageReference "Quick" */;
+			package = E3749D6C29665AB1002EF899 /* XCRemoteSwiftPackageReference "Quick" */;
 			productName = Quick;
 		};
-		E31CD0302963E40000D63337 /* Nimble */ = {
+		E3749D7329665AE0002EF899 /* Nimble */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E31CD02F2963E40000D63337 /* XCRemoteSwiftPackageReference "Nimble" */;
+			package = E3749D7229665AE0002EF899 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		E3749D7629665C83002EF899 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3749D6C29665AB1002EF899 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		E3749D7829665C83002EF899 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3749D7229665AE0002EF899 /* XCRemoteSwiftPackageReference "Nimble" */;
 			productName = Nimble;
 		};
 		E37FE6C2295D0EC100E55B92 /* CombineMoya */ = {
