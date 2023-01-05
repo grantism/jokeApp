@@ -14,8 +14,9 @@ To start with, I would spend more time (and $10) to improve the UI to automatica
 
 Adding in some local caching of the jokes to persist them across sessions qould also improve the users experience.
 
-Next, I would increase test coverage everywhere. I implemented a couple of simeple tests, but if I had more time the service, view, view model, model would be covered.
+Next, I would increase test coverage everywhere. I implemented a couple of simeple tests, but if I had more time the service, view, view model, model would be covered as well as more UI tests & integration tests.
+Additionally I would write test cases in a more BDD style (given when then)
 
-Additionally, I would improve how dpeendancy injection is handled to make test mocking & substitution easier as well as follow through on the TODO comments in the code.
+Additionally, I would improve how dependancy injection is handled to make test mocking & substitution easier as well as follow through on the TODO comments in the code.
 
 
