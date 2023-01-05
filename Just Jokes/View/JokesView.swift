@@ -10,6 +10,7 @@ import UIKit
 class JokesView: UIView {
     private let scrollView = UIScrollView()
     private let scrollFrame: CGRect
+    //TODO: view shouldn't directly know about VM.
     private let viewModel: JokesViewModel
 
     init(frame: CGRect, viewModel: JokesViewModel) {
