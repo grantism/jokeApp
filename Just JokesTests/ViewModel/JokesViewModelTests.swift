@@ -5,22 +5,24 @@ import Nimble
 
 @testable import Just_Jokes
 
-class JokesServiceTests: QuickSpec {
+class JokesViewModelTests: QuickSpec {
     let provider = MoyaProvider<JokesApi>(
         stubClosure: MoyaProvider.immediatelyStub
     )
     var service: JokesService!
+    var jokesViewModel: JokesViewModel!
 
     override func spec() {
         beforeEach {
-            self.service = JokesServiceImplementation(provider: self.provider)
+            self.service = JokesServiceMock(provider: self.provider)
+            self.jokesViewModel = JokesViewModel(service: self.service)
         }
 
-        describe("\(JokesService.self)") {
-            describe("jokeOfTheDay()") {
+        describe("\(JokesViewModel.self)") {
+            describe("fetchData()") {
                 context("when invoked") {
                     it("should return a joke") {
-                        let expected = "Q: Whatever happened to the cow that was lifted into the air by the tornado?\r\nA: Udder disaster!"
+                        let expected = "Text"
                         self.service.jokeOfTheDay { joke in
                             expect(joke?.text).to(equal(expected))
                         }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E31CD02E2963E35A00D63337 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = E31CD02D2963E35A00D63337 /* Quick */; };
 		E31CD0312963E40000D63337 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = E31CD0302963E40000D63337 /* Nimble */; };
+		E3749D6029664AF7002EF899 /* JokesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3749D5F29664AF7002EF899 /* JokesViewModelTests.swift */; };
+		E3749D642966501E002EF899 /* JokesServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3749D632966501E002EF899 /* JokesServiceMock.swift */; };
 		E37FE685295D07D900E55B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE684295D07D900E55B92 /* AppDelegate.swift */; };
 		E37FE687295D07D900E55B92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE686295D07D900E55B92 /* SceneDelegate.swift */; };
 		E37FE689295D07D900E55B92 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37FE688295D07D900E55B92 /* JokesViewController.swift */; };
@@ -50,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E3749D5F29664AF7002EF899 /* JokesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewModelTests.swift; sourceTree = "<group>"; };
+		E3749D632966501E002EF899 /* JokesServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesServiceMock.swift; sourceTree = "<group>"; };
 		E37FE681295D07D900E55B92 /* Just Jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Jokes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37FE684295D07D900E55B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E37FE686295D07D900E55B92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3749D6129664E7F002EF899 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3749D5F29664AF7002EF899 /* JokesViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E3749D6229664FF1002EF899 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3749D632966501E002EF899 /* JokesServiceMock.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E37FE678295D07D900E55B92 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				E37FE6DE2963C81200E55B92 /* Networking */,
+				E3749D6129664E7F002EF899 /* ViewModel */,
+				E3749D6229664FF1002EF899 /* Supporting Files */,
 			);
 			path = "Just JokesTests";
 			sourceTree = "<group>";
@@ -396,7 +418,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3749D642966501E002EF899 /* JokesServiceMock.swift in Sources */,
 				E37FE69C295D07DB00E55B92 /* JokesResponseTests.swift in Sources */,
+				E3749D6029664AF7002EF899 /* JokesViewModelTests.swift in Sources */,
 				E37FE6E22963DB4E00E55B92 /* JokesServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

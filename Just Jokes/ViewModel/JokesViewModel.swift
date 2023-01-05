@@ -11,7 +11,7 @@ class JokesViewModel {
 
     // TODO: improve how DI is handled
     convenience init() {
-        self.init(service: JokesService())
+        self.init(service: JokesServiceImplementation())
     }
 
     init(service: JokesService) {

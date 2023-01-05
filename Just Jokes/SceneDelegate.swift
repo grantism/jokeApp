@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         // TODO: improve DI
-        let jokeService = JokesService()
+        let jokeService = JokesServiceImplementation()
 
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()

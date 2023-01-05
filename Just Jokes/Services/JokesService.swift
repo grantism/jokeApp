@@ -10,10 +10,15 @@
 import Foundation
 import Moya
 
-class JokesService {
-    private let provider: MoyaProvider<JokesApi>
+// Mockable for testing
+protocol JokesService {
+    var provider: MoyaProvider<JokesApi> { get }
+    func jokeOfTheDay(completion: @escaping (Joke?) -> Void)
+}
 
-    // Mockable for testing
+class JokesServiceImplementation: JokesService {
+    internal let provider: MoyaProvider<JokesApi>
+
     init(provider: MoyaProvider<JokesApi>) {
         self.provider = provider
     }
